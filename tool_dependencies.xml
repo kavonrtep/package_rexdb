@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<tool_dependency>
+    <package name="rexdb" version="1.0">
+        <install version="1.0">
+          <actions>
+            <action type="download_by_url">https://bitbucket.org/petrnovak/rexdb_for_dante/get/1f6d4cf7a0fd.zip</action>
+             <action type="move_directory_files">
+              <source_directory>$TMP_WORK_DIR/petrnovak-rexdb_for_dante-1f6d4cf7a0fd</source_directory>
+              <destination_directory>$INSTALL_DIR</destination_directory>
+             </action>
+             <action type="set_environment">
+               <environment_variable action="set_to" name="REXDB">$INSTALL_DIR</environment_variable>
+             </action>
+          </actions>
+        </install>
+        <readme>
+          REXdb databases
+        </readme>
+    </package>
+</tool_dependency>
